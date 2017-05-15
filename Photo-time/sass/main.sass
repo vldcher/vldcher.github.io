@@ -1,0 +1,464 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	// font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: #fff
+	&.ishome
+		.site-header
+			min-height: 745px
+			height: 100vh
+			background-color: $dark
+			.top-line
+				padding-top: 40px
+				position: absolute
+				width: 100%
+				z-index: 1
+				.logo
+					img
+						width: 53px
+						height: auto
+						margin-left: 46px
+				
+			
+				ul, li
+					list-style-type: none
+					padding-top: 13px
+					margin: 0
+					font-size: 15px
+					margin-top: 2px
+					margin-right: -6px
+					li
+						display: inline-block
+						max-width: 100%
+						opacity: 1
+						
+						a
+							text-transform: uppercase
+							font-family: "gothamrounded_bold", sans-serif
+							letter-spacing: 3.7px
+							color: #fff
+				.left-menu
+					ul
+						padding-left: 144px
+						li
+							padding-left: 58px
+						
+				.right-menu		
+					ul
+						padding-left: 1px
+						li
+							padding-right: 74px	
+
+			.mid-header
+				position: relative
+				margin-top: 231px
+				display: block
+				text-align: center
+				h1
+
+					font-size: 38px
+					text-transform: uppercase
+					letter-spacing: 4.8px
+					margin-left: 0px
+					font-family: "gothamrounded_bold", sans serif
+				p
+					margin-top: -25px
+					font-size: 14px
+					letter-spacing: 3.4px
+					font-family: "gothamrounded_medium", sans serif
+
+			
+					margin-bottom: 36px
+
+				a.button
+					color: #fff
+					background-color: $accent
+					border-radius: 2px
+					font-size: 11px
+					padding: 17px 39px 17px 33px
+					position: relative
+					text-transform: uppercase
+					letter-spacing: 2px
+					font-family: "gothamrounded_medium", sans-serif
+					transition: background-color .25s ease
+					border: none
+			.header-icons
+				margin-top: 227px
+				text-align: center
+				font-size: 	25px
+				letter-spacing: 4px	
+
+
+	.sect2
+		height: 492px
+		overflow: hidden
+		width: 100%
+		float: left
+		background-color: $gray
+		.text-wrapper1
+			// padding-left: 130px
+			// z-index: 1
+			// position: relative
+			z-index: 1
+			position: relative
+			margin-left: 131px
+			// width: 450px
+			margin-top: 106px
+			.block-button
+				margin-top: 53px
+			h3
+				color: $accent
+				font-size: 18px
+				letter-spacing: 3.7px
+				text-align: left
+				text-transform: uppercase
+				font-family: "gothamrounded_bold", sans-serif
+				margin-top: 0px
+				margin-left: -5px
+				line-height: 1.3
+
+			p
+				font-family: "gothamrounded_book", sans-serif
+				font-size: 12px
+				letter-spacing: 1.7px
+				line-height: 2
+				margin-top: 38px
+				color:#7b7b7c
+				word-spacing: 1.5px
+				margin-left: -1px
+				position: relative
+			a.button
+					color: #fff
+					background-color: $accent
+					border-radius: 2px
+					// font-size: 11px
+					padding-left: 32px
+					padding-right: 51px
+					padding-top: 17px
+					padding-bottom: 18px
+					position: relative
+					text-align: center
+					text-transform: uppercase
+					letter-spacing: 2px
+					// font-family: "gothamrounded-light-webfont", sans serif
+					transition: background-color .25s ease
+					border: none
+					margin-top: -10px
+
+					width: 195px
+					font-family: "gothamrounded_medium", sans-serif
+					font-size: 12px
+					
+
+		.img-wrapper1
+			z-index: 0
+			position: relative
+			margin-left: 513px
+			margin-top: -296px
+			overflow: hidden
+			height: 405px
+	
+	.sect3
+		height: 558px
+		overflow: hidden
+		width: 100%
+		float: left
+		background-color: #fff
+		.text-wrapper2
+			z-index: 1
+			position: relative
+			margin-left: 113px
+			margin-top: 139px
+			.block-button
+				margin-top: 49px
+			h3
+				color: $accent
+				font-size: 18px
+				letter-spacing: 3px
+				text-align: left
+				margin-left: -3px
+				text-transform: uppercase
+				font-family: "gothamrounded_bold", sans-serif
+
+			p
+				font-family: "gothamrounded_book", sans-serif
+				font-size: 12px
+				letter-spacing: 1.7px
+				line-height: 1.9
+				margin-top: 32px
+				color:#7b7b7c
+				word-spacing: 1.5px
+			a.button
+					color: #fff
+					background-color: $accent
+					border-radius: 2px
+					// font-size: 11px
+					padding-left: 41px
+					padding-right: 46px
+					padding-top: 17px
+					padding-bottom: 18px
+					position: relative
+					text-align: center
+					text-transform: uppercase
+					letter-spacing: 2px
+					// font-family: "gothamrounded-light-webfont", sans serif
+					transition: background-color .25s ease
+					border: none
+
+					width: 195px
+					font-family: "gothamrounded_medium", sans-serif
+					font-size: 12px
+
+		.img-wrapper2
+			z-index: 0
+			position: relative
+			margin-left: 112px
+			margin-top: 147px
+			overflow: hidden
+			height: 411px
+
+		.arrows-wrapper
+			position: relative
+			margin-left: 111px
+			margin-top: 59px
+			line-height: 1.1
+			p
+				color:#111
+				margin-bottom: -2px
+				letter-spacing: 2px
+				font-size: 12px
+				font-family: "gothamrounded_medium", sans-serif
+			span
+				color:#111
+				letter-spacing: 7px
+				font-size: 30px
+
+	.sect4
+		height: 482px
+		overflow: hidden
+		width: 100%
+		background-color: $gray
+		text-align: center
+		
+		.text-wrapper3
+			position: relative
+			margin-top: 165px
+			margin-left: 17px
+
+			span
+				margin-left: 94px
+
+			h4
+				color: #111
+				text-transform: uppercase
+				font-family: "gothamrounded_bold", sans-serif
+				letter-spacing: 2.4px
+				margin-top: 25px
+				margin-left: 96px
+
+			p
+				color: #111
+				font-family: "gothamrounded_medium", sans-serif
+				font-size: 10px
+				letter-spacing: 1.5px
+				margin-top: -4px
+				margin-left: 101px
+				line-height: 1.2
+		.bus-wrapper
+			margin-top: 121px
+			margin-right: 35px
+			// img
+			// 	max-width: 370px 
+			
+		.tree-wrapper
+			margin-top: 121px	
+			margin-left: -210px
+			b
+				position: absolute
+				color:#111
+				letter-spacing: 4.5px
+				font-size: 30px
+				margin-left: 334px
+				margin-top: -41px
+
+	.sect5
+		background-size: cover
+		height: 790px
+		overflow: hidden
+		width: 100%
+
+		.mail-wrapper
+
+			.mail-sect
+
+			h3
+				color: #fff
+				font-family: "gothamrounded_medium", sans-serif
+				font-size: 24px
+				letter-spacing: 3.7px
+				text-transform: uppercase
+				text-align: center
+				margin-top: 343px
+				margin-left: 0px
+			p 
+				text-align: center
+				text-transform: uppercase
+				// -webkit-input-placeholder-color: #c0392b
+				// -moz-input-placeholder-color: #c0392b/* Firefox 19+ */
+				// -moz-input-placeholder-color: #c0392b/* Firefox 18- */
+				// -ms-input-placeholder-color: #c0392b
+
+				.mail
+					width: 280px
+					height: 60px
+					border-radius: 4px 0px 0px 4px
+					margin-right: 73px
+					margin-top: 2px
+					border: none
+					text-transform: uppercase
+					padding-left: 24px
+					letter-spacing: 2.2px
+					font-family: "gothamrounded_bold", sans-serif
+
+					
+			a.button
+					position: absolute
+					color: #fff
+					background-color: $accent
+					border-radius: 0px 4px 4px 0px
+					font-size: 23px
+					padding: 13px 21px
+					text-align: center
+					margin-left: 731px
+					margin-top: -76px
+	
+	.sect6
+		background-color: $gray
+		height: 396px
+		overflow: hidden
+		width: 100%
+		.text-wrapper6
+			
+
+			h4, p
+				font-size: 20px
+				font-family: "gothamrounded_bold", sans-serif
+				text-transform: uppercase
+				letter-spacing: 3px
+				color: #111
+				text-align: center
+				margin-top: 84px
+
+			p
+				font-size: 12px
+				margin-top: -22px
+				line-height: 1.8
+				padding-left: 91px
+				padding-right: 70px
+				font-family: "gothamrounded_medium", sans-serif
+						
+		a.button
+			color: #fff
+			background-color: $accent
+			border-radius: 0px 4px 4px 0px
+			font-size: 30px
+			padding: 12px 16px
+			text-align: center
+			margin-left: -7px
+		a.light
+			background-color: #1abc9c
+			font-size: 17px
+			padding: 21px 74px 13px 24px
+			border-radius: 4px 0px 0px 4px
+			text-transform: uppercase
+			letter-spacing: 2px
+			font-family: "gothamrounded_bold", sans-serif
+		.buttons
+		
+			.apple-buttons-wrapper
+				position: relative
+				margin-left: 203px
+				margin-top: 36px
+			.android-buttons-wrapper	
+				margin-left: 525px
+				margin-top: -44px
+	
+
+	.footer
+		height: 132px
+		color: #111
+		background-color: #fff
+		.footer-menu
+			ul
+				text-transform: uppercase
+				font-family: "gothamrounded_bold", sans-serif
+				letter-spacing: 1.7px	
+				font-size: 14px
+				list-style-type: none
+				margin-top: 42px
+				margin-left: -1px
+				display: flex
+				flex-direction: row
+				flex-wrap: nowrap
+				li
+					display: inline-block
+					max-width: 100%
+					padding-left: 10px
+			.divider
+				display: inline-block
+				color: $accent
+		p	
+			font-family: "gothamrounded_medium", sans-serif
+			font-size: 15px
+			letter-spacing: 1.8px
+			margin-left: 55px
+		.img-wrapper6
+			margin-top: 39px
+			margin-left: 51px
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" // Всегда в конце
