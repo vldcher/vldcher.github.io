@@ -1,0 +1,275 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background-color: #212121
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+	// ::-webkit-scrollbar-button 
+	// 	background-image: url('')
+	// 	background-repeat: no-repeat
+	// 	width: 5px
+	// 	height: 0px
+	
+	// -webkit-scrollbar-track 
+	// 	background-color: red
+	
+
+	// ::-webkit-scrollbar-thumb 
+	// 	-webkit-border-radius: 0px
+	// 	border-radius: 0px
+	// 	background-color: #6dc0c8
+	
+
+	// ::-webkit-scrollbar-thumb:hover
+	// 	background-color: #56999f
+	
+
+	// ::-webkit-resizer
+	// 	background-image: url('')
+	// 	background-repeat: no-repeat
+	// 	width: 4px
+	// 	height: 0px
+	
+	// ::-webkit-scrollbar
+	// 	width: 4px
+	
+
+.h1, .h2, .h3, .h4, .h5, .h6
+	line-height: 1.4
+	text-transform: uppercase
+.text-center
+	text-align: center
+
+.start-area
+	// display: flex
+	// margin: 0 auto
+	text-align: center
+	margin-top: 40%
+	h5
+		color: #545454
+		p
+			i
+				margin-right: 5px
+
+	.button-blue
+		display: inline-block
+		border: none
+		color: #fff
+		text-decoration: none
+		background-color: $accent
+		padding: 8px 20px
+		font-size: 13px
+		text-transform: none
+		font-weight: 600
+		letter-spacing: 2px
+		border-radius: 2px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		// &::after
+		// 	transition: background-color .2s ease
+		// 	position: absolute
+		// 	content: ''
+		// 	height: 4px
+		// 	bottom: 0
+		// 	width: 100%
+		// 	background-color: darken($accent, 50%)
+		// 	opacity: .18
+		// 	border-bottom-left-radius: 2px
+		// 	border-bottom-right-radius: 2px
+		// 	left: 0
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($accent, 5%)
+			&::after
+				opacity: .32
+
+.modal-content
+	background-color: #262626
+	border: $accent 3px solid
+	border-radius: 5px
+	.modal-header
+		border: none
+		.close
+			color: #fff
+			font-weight: 300
+			opacity: 1
+			text-shadow: none
+			&:hover
+				opacity: .6
+		.modal-title
+			color: #fff
+			text-align: left
+
+	.modal-body
+		.nav-tabs
+			border-bottom: 2px solid #363636
+		.nav-tabs>li>a
+			color: #808080
+			background-color: #262626
+			border: 3px solid transparent
+			margin: 0
+
+		.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+			color: $accent
+			border-bottom: 3px solid $accent
+			transition: all .9s ease
+	.modal-footer
+		border: none
+		
+.tab-content
+	h4
+		text-align: left
+		color: #fff
+		opacity: .6
+	.table
+		border: 2px solid #2b2b2b
+		color: #757575
+		font-size: 14px
+
+
+
+	.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+		border: 1px solid #2b2b2b
+		.fa-info
+			font-size: 18px
+		.fa-info-circle
+			font-size: 22px
+			color: $accent
+		.fa-check
+			color: #84b547
+			font-size: 18px
+		img
+			float: left
+			max-width: 50px
+			border-radius: 50%
+		img:hover
+			transform: scale(1.05)
+			transition: all .8 ease
+		// .platform
+		// 	white-space: nowrap
+		// 	p:hover
+		// 		text-decoration: none
+		.platform
+			word-wrap: break-word
+			overflow-wrap: break-word
+			width: 250px
+
+
+
+
+
+	.table-hover>thead>tr
+		white-space: nowrap
+		.fa
+			color: darken(#fff, 77%)
+		.fa-sort-amount-asc
+			color: $accent
+
+
+
+	.table-hover>thead>tr:hover
+		background-color: lighten(#212121, 10%)
+		transition: all .5s ease
+		color: darken(#fff, 20%)
+		cursor: pointer
+
+	.table-hover>tbody>tr:hover
+		background-color: lighten(#212121, 15%)
+		color: darken(#fff, 20%)
+		transition: all .5s ease
+		cursor: pointer
+
+
+// Tooltips
+
+.tab-content .table>tbody>tr>td .tooltip,
+.tab-content .table>tbody>tr>th .tooltip,
+.tab-content .table>tfoot>tr>td .tooltip,
+.tab-content .table>tfoot>tr>th .tooltip,
+.tab-content .table>thead>tr>td .tooltip,
+.tab-content .table>thead>tr>th .tooltip
+	position: relative
+	display: inline-block
+	border-bottom: 1px dotted #fff
+	.tooltiptext
+		visibility: hidden
+		width: 120px
+		background-color: #555
+		color: #fff
+		text-align: center
+		border-radius: 6px
+		padding: 5px 0
+		position: absolute
+		z-index: 1
+		bottom: 125%
+		left: 50%
+		margin-left: -60px
+		opacity: 0
+		transition: opacity 1s
+		&::after
+			content: ""
+			position: absolute
+			top: 100%
+			left: 50%
+			margin-left: -5px
+			border-width: 5px
+			border-style: solid
+			border-color: #555 transparent transparent transparent
+	&:hover .tooltiptext
+		visibility: visible
+		opacity: 1
+
+
+
+
+
+
+@import "media" // Всегда в конце

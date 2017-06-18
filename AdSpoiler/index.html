@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>AdSpoiler</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#212121">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#212121">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<!-- Bootstrap  -->
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Data tables -->
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+
+	<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+	<script src='https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js'></script>
+	<script src='https://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js'></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="start-area">
+					<h5><p><i class="fa fa-info-circle"></i>Показать модальное окно</p></h5>
+					<!-- Trigger the modal with a button -->
+					<button type="button" class="btn button-blue btn-lg" data-toggle="modal" data-target="#myModal">Открыть</button>
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+									<h3 class="modal-title">Аналитика по площадкам</h3>
+								</div>
+								<div class="modal-body">
+									<ul class="nav nav-tabs">
+										<li class="active"><a data-toggle="tab" href="#home">Таблица</a></li>
+										<li><a data-toggle="tab" href="#menu1">График</a></li>
+									</ul>
+									<div class="tab-content">
+										<div id="home" class="tab-pane fade in active">
+											<h4>Аналитика данных в таблице</h4>
+											<div class="table-responsive">
+												<table class="table table-hover">
+													<thead>
+														<tr>
+															<th>Preview</th>
+															<th colspan="2">Время <i class="fa fa-sort-amount-asc"></i></th>
+															<th>Статус</th>
+															<th>Площадка <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
+															<th>Тип</th>
+															<th colspan="2">Цена <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
+															<th colspan="2">Активность <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
+															<th colspan="2">Подписок <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
+															<th colspan="2">Пол <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
+															<th>Возраст</th>
+															<th colspan="2">CPA <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
+															<th></th>
+														</tr>
+														<tr>
+															<th></th>
+															<th>От</th>
+															<th>До</th>
+															<th>Все <i class="fa fa-arrows-v"></i></th>
+															<th>Поиск</th>
+															<th>Е</th>
+															<th>От</th>
+															<th>До</th>
+															<th>От</th>
+															<th>До</th>
+															<th>От</th>
+															<th>До</th>
+															<th>От</th>
+															<th>До</th>
+															<th>Все</th>
+															<th>От</th>
+															<th>До</th>
+															<th><i class="fa fa-user-secret"></i></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><i class="fa fa-bicycle"></i></td>
+															<td colspan="2">Doe</td>
+															<td><i class="fa fa-check"></i></td>
+															<td><div class="platform"><a href="#"><img src="img/groups/smeyaka.JPG" alt="Смеяка"><p>ПРИКОЛЫ | Смеяка</p></a></div></td>
+															<td><i class="fa fa-info"></i>
+																
+																<!-- <div class="tooltip">Hover over me
+																	<span class="tooltiptext">Tooltip text</span>
+																</div> -->
+															</td>
+															<td colspan="2">7450 p.</td>
+															<td colspan="2">John</td>
+															<td colspan="2">550</td>
+															<td colspan="2">Doe</td>
+															<td>Doe</td>
+															<td colspan="2">Doe</td>
+															<td><i class="fa fa-info-circle"></i></td>
+														</tr>
+														<tr>
+															<td><i class="fa fa-bicycle"></i></td>
+															<td colspan="2">Doe</td>
+															<td><i class="fa fa-check"></i></td>
+															<td><div class="platform"><a href="#"><img src="img/groups/kinokaif.JPG" alt="Кинокайф"><p>КиноКайф - Лучшие Фильмы</p></a></div></td>
+															<td><i class="fa fa-info"></i></td>
+															<td colspan="2">7450 p.</td>
+															<td colspan="2">John</td>
+															<td colspan="2">13254</td>
+															<td colspan="2" class="pie-chart-row"><!-- <div id="chart"></div> --></td>
+															<td>Doe</td>
+															<td colspan="2">Doe</td>
+															<td><i class="fa fa-info-circle"></i></td>
+														</tr>
+														<tr>
+															<td><i class="fa fa-bicycle"></i></td>
+															<td colspan="2">Doe</td>
+															<td><i class="fa fa-check"></i></td>
+															<td><div class="platform"><a href="#"><img src="img/groups/bot-maxim.JPG" alt="Бот-Максим"><p>Бот - Максим</p></a></div></td>
+															<td><i class="fa fa-info"></i></td>
+															<td colspan="2">7450 p.</td>
+															<td colspan="2">John</td>
+															<td colspan="2">13254</td>
+															<td colspan="2" class="pie-chart-row"><!-- <div id="chart"></div> --></td>
+															<td>Doe</td>
+															<td colspan="2">Doe</td>
+															<td><i class="fa fa-info-circle"></i></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div id="menu1" class="tab-pane fade">
+											<h4>Аналитика данных в графике</h4>
+											<div class="tab-content">
+												<div id="chart"></div>
+											</div>	
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
