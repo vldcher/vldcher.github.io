@@ -26,13 +26,7 @@
 
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
-	<!-- Google charts -->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<!-- Highcharts -->
-	<script src="https://code.highcharts.com/highcharts.js"></script>
-	<script src="https://code.highcharts.com/modules/exporting.js"></script>
-	<script src="https://code.highcharts.com/modules/data.js"></script>
-	<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
 
 </head>
 <body>
@@ -40,7 +34,7 @@
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
 				<div class="start-area">
-					<h5><p><i class="fa fa-info-circle info-tip"></i>Показать модальное окно</p></h5>
+					<h5><i class="fa fa-info-circle info-tip"></i>Показать модальное окно</h5>
 					<!-- Trigger the modal with a button -->
 					<button type="button" class="btn button-blue btn-lg" data-toggle="modal" data-target="#myModal">Открыть</button>
 					<!-- Modal -->
@@ -65,10 +59,10 @@
 													<thead>
 
 														<tr>
-															<th style="max-width: 62px">Preview</th>
-															<th colspan="2" style="max-width: 70px">Время <i class="fa fa-sort-amount-asc"></i></th>
-															<th style="max-width: 58px">Статус</th>
-															<th width="240px" >Площадка <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
+															<th>Preview</th>
+															<th colspan="2">Время <i class="fa fa-sort-amount-asc"></i></th>
+															<th>Статус</th>
+															<th>Площадка <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
 															<th>Тип</th>
 															<th colspan="2" >Цена <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
 															<th colspan="2">Активность <i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i></th>
@@ -165,7 +159,7 @@
 															<td><i class="fa fa-info-circle"></i></td>
 														</tr>
 														<tr>
-															<td valign="middle"  align="center"><i class="fa fa-bicycle"></i></td>
+															<td ><i class="fa fa-bicycle"></i></td>
 															<td colspan="2"><div>11.11.11 </div> <span>11:11</span></td>
 															<td><i class="fa fa-clone"></i></td>
 															<td><div class="platform"><a href="#"><img src="img/groups/bot-maxim.JPG" alt="Бот-Максим"><p>Бот - Максим</p></a></div></td>
@@ -192,17 +186,18 @@
 												</table>
 
 											</div>
-								<!-- <div id="barChart" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
-									</div>
-									<div id="menu1" class="tab-pane fade">
-										<h4>Аналитика данных в графике</h4>
-										<div class="tab-content">
-											<div id="chart"></div>
-										</div>	
+											<!-- <div id="barChart" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
+										</div>
+										<div id="menu1" class="tab-pane fade">
+											<h4>Аналитика данных в графике</h4>
+											<div class="tab-content">
+												<div id="chart"></div>
+											</div>	
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="modal-footer">
+								<div class="modal-footer">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -210,13 +205,18 @@
 			</div>
 		</div>
 	</div>
-</div>
 
 
+	<!-- Google charts -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!-- Highcharts -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/data.js"></script>
+	<script src="https://code.highcharts.com/modules/drilldown.js"></script>
 
-
-<link rel="stylesheet" href="css/main.min.css">
-<script src="js/scripts.min.js"></script>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
 
 
 </body>
