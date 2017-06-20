@@ -44,36 +44,6 @@ body
 	height: auto
 
 
-	// ::-webkit-scrollbar-button 
-	// 	background-image: url('')
-	// 	background-repeat: no-repeat
-	// 	width: 5px
-	// 	height: 0px
-	
-	// -webkit-scrollbar-track 
-	// 	background-color: red
-	
-
-	// ::-webkit-scrollbar-thumb 
-	// 	-webkit-border-radius: 0px
-	// 	border-radius: 0px
-	// 	background-color: #6dc0c8
-	
-
-	// ::-webkit-scrollbar-thumb:hover
-	// 	background-color: #56999f
-	
-
-	// ::-webkit-resizer
-	// 	background-image: url('')
-	// 	background-repeat: no-repeat
-	// 	width: 4px
-	// 	height: 0px
-	
-	// ::-webkit-scrollbar
-	// 	width: 4px
-	
-
 .h1, .h2, .h3, .h4, .h5, .h6
 	line-height: 1.4
 	text-transform: uppercase
@@ -178,9 +148,11 @@ body
 
 	.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
 		border: 1px solid #2b2b2b
+		vertical-align: middle
+		padding: 4px
 		.fa-info
 			font-size: 18px
-		.fa-info-circle
+		.fa-info-circle, .fa-clone
 			font-size: 22px
 			color: $accent
 		.fa-check
@@ -193,14 +165,18 @@ body
 		img:hover
 			transform: scale(1.05)
 			transition: all .8 ease
-		// .platform
-		// 	white-space: nowrap
-		// 	p:hover
-		// 		text-decoration: none
+
 		.platform
 			word-wrap: break-word
 			overflow-wrap: break-word
-			width: 250px
+			width: 240px
+			p
+				color: $accent
+				border: none
+				// display: table-cell
+				// vertical-align: middle
+			p:hover
+				border: none
 
 
 
@@ -212,6 +188,10 @@ body
 			color: darken(#fff, 77%)
 		.fa-sort-amount-asc
 			color: $accent
+		.fa-arrows-v
+			color: #fff
+
+
 
 
 
@@ -268,8 +248,58 @@ body
 		opacity: 1
 
 
+.darkSearch
+	background-color: $searchColor
+	border: 1px solid lighten($searchColor, 10%)
+	width: 100%
+	min-width: 25px
+
+.whiteText
+	color: #fff
+	font-weight: normal
+
+.blackTimeSearch
+	border: 1px solid lighten($searchColor, 10%)
+	background-color: #262626
+	max-width: 30px
+	p
+		margin: 5px 5px 5px 5px
+
+.activityAccentColor
+	color: #0055a3
+	
+	.commentsIcon
+		margin-left: 5px
+	.bullhornIcon
+		margin-right: 5px
+	.fa
+		margin-right: 5px
+
+.followersColor
+	color: #c73b44
+
+//Highcharts style
 
 
+.highcharts-background,
+.highcharts-plot-background,
+.highcharts-button,
+.highcharts-legend,
+.highcharts-data-label-connector,
+.highcharts-label,
+.highcharts-text-outline,
+.highcharts-credits,
+.highcharts-axis-labels,
+.highcharts-xaxis-labels,
+.highcharts-grid,
+.highcharts-axis
+	display: none
 
+.highcharts-series
+	transform: translate(20px,18px)
+	transform: scale(1.5,1.5)
 
+// .highcharts-container
+// 	width: 70px
+// 	height: 70px
 @import "media" // Всегда в конце
