@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Lottery</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="lottery">
+						<div class="lottery-header">
+							<div class="winner-field">
+							
+								<button class="winner" id='winner'>Choose winner</button>
+									<span id='winnerName'>Winner name is:</span>
+							</div>
+						</div>
+						<div class="registration">
+							<h1>Registration Form</h1>
+
+							<form action="" id="persons" >
+								<span>Name:</span>
+								<input type="text" class="nameField" id="name" name="name" placeholder="Name..." size="13" required>*
+								<br>
+								<span>Surname:</span>
+								<input type="text" class="surnameField" id="surname" name="surname" placeholder="Surname..." size="13" required>*
+								<br>
+								<span>E-mail:</span>
+								<input type="email" class="emailField" id="email" name="email" size="13" placeholder="example@gmail.com" required>*
+								<br>
+								<span>Phone:</span>
+								<input type="tel" id="phone" name="tel"  size="13"> 
+								<br>
+								<span>Birthdate:</span>
+								<input type="date" id="birthdate" name="birthdate">
+								<br>
+								<input type="submit" value="Save" id='submit'>
+								<input type="button" name="reset_form" value="Clear Form" onclick="this.form.reset();">
+								<p>* - required fields</p>
+							</form> 
+						</div>
+					</div>
+					<br>
+					<br>
+					<table style="width:100%" id="lotteryTable">
+						<thead>
+						<caption>The participants:</caption>
+							<tr>
+								<th>Name</th>
+								<th>Surname</th> 
+								<th>Email</th>
+								<th>Phone</th>
+								<th>Birthdate</th>
+							</tr>
+						</thead>
+						<tbody>
+											
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-3"></div>
+
+
+			</div>
+		</div>	
+	</main>
+
+	<footer>
+
+	</footer>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
